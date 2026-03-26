@@ -1,13 +1,13 @@
 Consolebased GameStop program in Java
 
-A terminal-based program where the user is met with a menu, where they can the table "videogames", "customer" and "orders" with full CRUD functionality. 
-This system is connected to the database "gamestop" in mysql, where the data within the tables changes in realtime based on user input
+A terminal-based program where the user is met with a menu, where they can modify the tables "videogames", "customer" and "orders" with full CRUD functionality. 
+This system is connected to the database "gamestop" in mysql, where the data within the tables changes in realtime based on user input.
 
 Features:
 - Full Create, read, update and delete functionality
 - Project manages multiple tables (Videogame, Customer and Order)
 - Dynamic user input through terminal
-- Databse updates in real-time
+- Database updates in real-time
 - Input handling through the use of PreparedStatement, which also prevents SQL injection
 
 Technologies used:
@@ -16,18 +16,20 @@ Technologies used:
 - JDBC
 
 Structure:
-- Main class handles with meny and user interaction
+- Main class handles with menu and user interaction
 - DatabaseConnection class handles all CRUD operations for all tables
-- WriteData class for accepting CRUD inputs form user and send it to the DatabaseConnection class
+- WriteData class for accepting CRUD inputs form user and sends it to the DatabaseConnection class
 
 How this project runs
 1. Clone the repository
 2. Set up MySQL database (gamestop) with associated tables (videogames, customer, orders)
-3. Change databse credentials to you own
-4. Run the java main file
+3. Change databse credentials to your own
+4. Download the .jar-file form MySQLs websites
+5. Add the .jar-file into the "libraries"-section of "Project Structure" (Upper-left corner -> Project Structure -> Libraries. Click on '+' and select the .jar-file)
+6. Run the java main file
 
 Documentation: 
-A full report will soon be included in the project, which documents the developemtn process from a concept to a full project, bugs and issues and how i fixed them including details on how i implemented the code.
+A full report will soon be included in the project, which documents the developement process from a concept to a full project, bugs and issues and how i fixed them including details on how i implemented the code.
 
 Challenges:
 - Debugging MySQL connection issues
