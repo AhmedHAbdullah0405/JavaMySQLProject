@@ -23,7 +23,7 @@ Structure:
 - VideoGamesDAO class for handling CRUD operations withint the "videogames" table
 - WriteData class for accepting CRUD inputs form user and sends it to the "CustomerDAO", "OrdersDAO" and "VideoGamesDAO" classes
 
-How this project runs
+How this project runs (In intelije IDE)
 1. Clone the repository
 2. Set up MySQL database (gamestop) with associated tables (videogames, customer, orders)
 3. Change databse credentials to your own
