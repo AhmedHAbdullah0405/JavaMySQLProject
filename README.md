@@ -17,8 +17,11 @@ Technologies used:
 
 Structure:
 - Main class handles with menu and user interaction
-- DatabaseConnection class handles all CRUD operations for all tables
-- WriteData class for accepting CRUD inputs form user and sends it to the DatabaseConnection class
+- DatabaseConnection class that stores private dbURL, password and username fields, where access is given through getters and setter methods
+- CustomerDAO class for handling CRUD operations withint the "customer" table
+- OrdersDAO class for handling CRUD operations withint the "orders" table
+- VideoGamesDAO class for handling CRUD operations withint the "videogames" table
+- WriteData class for accepting CRUD inputs form user and sends it to the "CustomerDAO", "OrdersDAO" and "VideoGamesDAO" classes
 
 How this project runs
 1. Clone the repository
@@ -38,5 +41,5 @@ Challenges:
 
 Planned improvements: 
 - Better input validation
-- Implementaion of OOP (Object-oriented programming)
+- Implementaion of OOP (Encapsualtion and inheritance is implemented so far. Will see if polymorphism and abstraction is applicable here later)
 - Improved UI in terminal
