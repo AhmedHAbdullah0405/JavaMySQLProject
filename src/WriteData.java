@@ -8,7 +8,7 @@ public class WriteData {
     void writeDataIntoCustomer(PreparedStatement preparedStatement) throws SQLException {
         System.out.println("Enter customer info:  (ID, firstName, lastName, email) ");
 
-        System.out.print("Customer ID: " );
+        System.out.print("Customer ID: ");
         int customerID = scanner.nextInt();
         scanner.nextLine();
         System.out.print("Enter customer first name: ");

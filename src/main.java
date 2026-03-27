@@ -5,7 +5,11 @@ public class main {
         Scanner scanner = new Scanner(System.in);
         int userChoice = 0;
 
-        DatabaseConnection databaseConnection = new DatabaseConnection();
+        CustomerDAO customerDAO = new CustomerDAO();
+
+        OrdersDAO ordersDAO = new OrdersDAO();
+
+        VideoGameDAO videoGameDAO = new VideoGameDAO();
 
         while (userChoice != 13) {
             System.out.println("Welcome to online GameStop! What do you want to do?: ");
@@ -34,51 +38,96 @@ public class main {
             switch (userChoice) {
                 case 1:
                     System.out.println("Here is all currently available games:");
-                    databaseConnection.selectGame();
+                    videoGameDAO.selectGame();
                     break;
                 case 2:
                     System.out.println("Here are the current orders: ");
-                    databaseConnection.selectOrders();
+                    ordersDAO.selectOrders();
                     break;
                 case 3:
+                    System.out.println("Here are the current orders: ");
+                    ordersDAO.selectOrders();
+
+                    System.out.println(" ");
+
                     System.out.println("Create an new order: ");
-                    databaseConnection.createOrders();
+                    ordersDAO.createOrders();
                     break;
                 case 4:
+                    System.out.println("Here are the current orders: ");
+                    ordersDAO.selectOrders();
+
+                    System.out.println(" ");
+
                     System.out.println("Update an order: ");
-                    databaseConnection.updateOrders();
+                    ordersDAO.updateOrders();
                     break;
                 case 5:
+                    System.out.println("Here are the current orders: ");
+                    ordersDAO.selectOrders();
+
+                    System.out.println(" ");
+
                     System.out.println("Delete an order");
-                    databaseConnection.deleteOrders();
+                    ordersDAO.deleteOrders();
                     break;
                 case 6:
+                    System.out.println("Here is all currently available games:");
+                    videoGameDAO.selectGame();
+
+                    System.out.println(" ");
+
                     System.out.println("What games do you want to add?: ");
-                    databaseConnection.createGame();
+                    videoGameDAO.createGame();
                     break;
                 case 7:
+                    System.out.println("Here is all currently available games:");
+                    videoGameDAO.selectGame();
+
+                    System.out.println(" ");
+
                     System.out.println("What games do you want to modify?: ");
-                    databaseConnection.updateGame();
+                    videoGameDAO.updateGame();
                     break;
                 case 8:
+                    System.out.println("Here is all currently available games:");
+                    videoGameDAO.selectGame();
+
+                    System.out.println(" ");
+
                     System.out.println("What games do you want to return?: ");
-                    databaseConnection.deleteGame();
+                    videoGameDAO.deleteGame();
                     break;
                 case 9:
+                    System.out.println("Here's the current customer info:");
+                    customerDAO.selectCustomer();
+
+                    System.out.println(" ");
+
                     System.out.println("Registered as customer");
-                    databaseConnection.createCustomer();
+                    customerDAO.createCustomer();
                     break;
                 case 10:
+                    System.out.println("Here's the current customer info:");
+                    customerDAO.selectCustomer();
+
+                    System.out.println(" ");
+
                     System.out.println("Customer info updated: ");
-                    databaseConnection.updateCustomer();
+                    customerDAO.updateCustomer();
                     break;
                 case 11:
+                    System.out.println("Here's the current customer info:");
+                    customerDAO.selectCustomer();
+
+                    System.out.println(" ");
+
                     System.out.println("Customer removed from database");
-                    databaseConnection.deleteCustomer();
+                    customerDAO.deleteCustomer();
                     break;
                 case 12:
                     System.out.println("Here's the current customer info:");
-                    databaseConnection.selectCustomer();
+                    customerDAO.selectCustomer();
                     break;
                 case 13:
                     System.out.println("Thank you for shopping at online GameStore!");
@@ -91,8 +140,6 @@ public class main {
         }
 
         scanner.close();
-
     }
-
 }
 
