@@ -21,6 +21,7 @@ Structure:
 - CustomerDAO class for handling CRUD operations withint the "customer" table
 - OrdersDAO class for handling CRUD operations withint the "orders" table
 - VideoGamesDAO class for handling CRUD operations withint the "videogames" table
+- All DAO classes inherit the getters and setters, plus the connection from the "DatabaseConnection" class.
 - WriteData class for accepting CRUD inputs form user and sends it to the "CustomerDAO", "OrdersDAO" and "VideoGamesDAO" classes
 
 How this project runs (In intelije IDE)
@@ -32,7 +33,7 @@ How this project runs (In intelije IDE)
 6. Run the java main file
 
 Documentation: 
-A full report will soon be included in the project, which documents the developement process from a concept to a full project, bugs and issues and how i fixed them including details on how i implemented the code.
+A full report is also included in the project, which documents the developement process from a concept to a full project, bugs and issues and how i fixed them including details on how i implemented the code.
 
 Challenges:
 - Debugging MySQL connection issues
@@ -41,5 +42,4 @@ Challenges:
 
 Planned improvements: 
 - Better input validation
-- Implementaion of OOP (Encapsualtion and inheritance is implemented so far. Will see if polymorphism and abstraction is applicable here later)
 - Improved UI in terminal
