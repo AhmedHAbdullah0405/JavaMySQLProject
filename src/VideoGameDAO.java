@@ -20,7 +20,7 @@ public class VideoGameDAO extends DatabaseConnection{
                         + "Game Description: " +  resultSet.getString("gameDesc") + " \n"
                         + "Game Genre: "+  resultSet.getString("gameGenre") + " \n" + "Player mode: " + resultSet.getString("playerMode") + " \n"
                         + "Price: " +  resultSet.getInt("price") + " \n" + "PEGI rating:  " + resultSet.getInt("PEGIrating") + " \n"
-                        + "In stock:  " + resultSet.getInt("quantity"));
+                        + "In stock:  " + resultSet.getInt("quantity") + " \n");
             }
 
             resultSet.close();

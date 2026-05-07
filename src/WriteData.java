@@ -87,6 +87,7 @@ public class WriteData {
         preparedStatement.setString(6, purchaseDate);
         preparedStatement.setBoolean(7, returned);
 
+        preparedStatement.executeUpdate();
     }
 
     void updateDataFromVideoGames(PreparedStatement preparedStatement) throws SQLException {
@@ -146,7 +147,7 @@ public class WriteData {
         String customerLastName = scanner.nextLine();
         System.out.print("Game Name: ");
         String gameName = scanner.nextLine();
-        System.out.println("Purcahse Date: ");
+        System.out.println("Purchase Date: ");
         String purchaseDate = scanner.nextLine();
         System.out.print("Returned: ");
         boolean returned = scanner.nextBoolean();

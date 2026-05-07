@@ -21,7 +21,7 @@ public class OrdersDAO extends DatabaseConnection{
                         + "Game name: " + resultSet.getString("gameName") + " \n"
                         + "GameID: " + resultSet.getInt("gameID") + " \n"
                         + "Purchase Date: " + resultSet.getString("purchaseDate") + " \n"
-                        + "Returned: " + resultSet.getBoolean("returned"));
+                        + "Returned: " + resultSet.getBoolean("returned") + " \n");
             }
 
             resultSet.close();

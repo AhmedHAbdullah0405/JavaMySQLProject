@@ -15,10 +15,10 @@ public class CustomerDAO extends DatabaseConnection{
             ResultSet resultSet = statement.executeQuery("SELECT * FROM customer");
 
             while (resultSet.next()) {
-                System.out.println("CustomerID: " + resultSet.getInt("customerID") + "\n"
-                        + "First Name: " + resultSet.getString("customerFirstName") + "\n"
-                        + "Last Name: " + resultSet.getString("customerLastName") + "\n"
-                        + "Email: " + resultSet.getString("customerEmail"));
+                System.out.println("CustomerID: " + resultSet.getInt("customerID") + " \n"
+                        + "First Name: " + resultSet.getString("customerFirstName") + " \n"
+                        + "Last Name: " + resultSet.getString("customerLastName") + " \n"
+                        + "Email: " + resultSet.getString("customerEmail") + " \n");
             }
             resultSet.close();
             statement.close();
@@ -70,7 +70,6 @@ public class CustomerDAO extends DatabaseConnection{
 
             preparedStatement.close();
             connection.close();
-
         }catch (Exception e){
             System.out.println("Failed to update data into 'customer' ");
         }

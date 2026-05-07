@@ -28,7 +28,7 @@ public class DatabaseConnection {
         return password;
     }
 
-    public void  setPassword(String newpassword) {
+    public void setPassword(String newpassword) {
         this.password = newpassword;
     }
 }
