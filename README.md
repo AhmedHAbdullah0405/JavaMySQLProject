@@ -42,4 +42,3 @@ Challenges:
 
 Planned improvements: 
 - Better input validation
-- Improved UI in terminal
