@@ -17,10 +17,14 @@ Technologies used:
 
 Structure:
 - Main class handles with menu and user interaction
-- DatabaseConnection class handles all CRUD operations for all tables
-- WriteData class for accepting CRUD inputs form user and sends it to the DatabaseConnection class
+- DatabaseConnection class that stores private dbURL, password and username fields, where access is given through getters and setter methods
+- CustomerDAO class for handling CRUD operations withint the "customer" table
+- OrdersDAO class for handling CRUD operations withint the "orders" table
+- VideoGamesDAO class for handling CRUD operations withint the "videogames" table
+- All DAO classes inherit the getters and setters, plus the connection from the "DatabaseConnection" class.
+- WriteData class for accepting CRUD inputs form user and sends it to the "CustomerDAO", "OrdersDAO" and "VideoGamesDAO" classes
 
-How this project runs
+How this project runs (In intelije IDE)
 1. Clone the repository
 2. Set up MySQL database (gamestop) with associated tables (videogames, customer, orders)
 3. Change databse credentials to your own
@@ -29,7 +33,7 @@ How this project runs
 6. Run the java main file
 
 Documentation: 
-A full report will soon be included in the project, which documents the developement process from a concept to a full project, bugs and issues and how i fixed them including details on how i implemented the code.
+A full report is also included in the project, which documents the developement process from a concept to a full project, bugs and issues and how i fixed them including details on how i implemented the code.
 
 Challenges:
 - Debugging MySQL connection issues
@@ -38,5 +42,4 @@ Challenges:
 
 Planned improvements: 
 - Better input validation
-- Implementaion of OOP (Object-oriented programming)
 - Improved UI in terminal
