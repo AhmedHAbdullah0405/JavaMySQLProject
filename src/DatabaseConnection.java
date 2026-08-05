@@ -4,9 +4,9 @@ public class DatabaseConnection {
     Connection connection = null;
     WriteData writeData = new WriteData();
 
-    private static String dbURL = "jdbc:mysql://localhost:3306/gamestop";
-    private static String username = "root";
-    private static String password = "ahmed_bekir0405";
+    private static String dbURL = "YOUR DATABSE URL";
+    private static String username = "YOUR DATABASE USERNAME";
+    private static String password = "YOUR DATABASE PASSWORD";
 
     public String getDbURL() {
         return dbURL;
