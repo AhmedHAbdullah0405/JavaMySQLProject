@@ -39,6 +39,3 @@ Challenges:
 - Debugging MySQL connection issues
 - Setting up methods that use PreparedStatement instead of Statement, to allow userinput to modify data within the tables
 - Setting up the UPDATE methods for all three tables
-
-Planned improvements: 
-- Better input validation
